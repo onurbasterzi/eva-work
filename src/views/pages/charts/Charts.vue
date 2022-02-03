@@ -77,9 +77,10 @@ export default {
           const resdata = res.data.Data.item;
           this.totalExpenses = res.data.Data.totalExpenses;
           let i = 0;
+       
           resdata.forEach((item) => {
             if (item.amount > 0) {
-              this.expensesData.push({ id: i, name: item.type, y: item.amount, color: Highcharts.getOptions().colors[i] });
+              this.expensesData.push({ id: i, name: item.type, y: item.amount, color: Highcharts.getOptions().colors[i],date:dateArray });
               i++;
             }
           });

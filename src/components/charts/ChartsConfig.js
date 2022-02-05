@@ -5,7 +5,7 @@ export const columnChartConfig = {
     chart: {
       type: "column",
       backgroundColor: "transparent",
-      marginBottom: 80,
+      marginBottom: 110,
       paddingTop: 20,
     },
       title: {

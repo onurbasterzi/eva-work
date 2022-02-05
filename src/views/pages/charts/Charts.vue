@@ -84,8 +84,13 @@ export default {
               i++;
             }
           });
+          
           this.pieChartOptions.series[0].data = this.expensesData;
-          // console.log(this.expensesData);
+
+          if(this.expensesData.length===0){
+            this.expensesData.push({id:-1});
+          }
+          
         })
         .catch((err) => {
           console.log(err.message);
